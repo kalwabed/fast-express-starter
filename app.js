@@ -1,13 +1,15 @@
-require('cors')()
 const path = require('path')
 const express = require('express')
+const eta = require('eta')
 const morgan = require('morgan')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 // set view engine
+app.engine('eta', eta.renderFile)
+app.set('view engine', 'eta')
 app.set('views', path.join(__dirname, './views'))
-app.set('view engine', 'ejs')
 
 app.use(morgan('dev'))
 app.use(express.json())
@@ -17,9 +19,9 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res) => {
-  res.render('index.ejs', { title: 'Hello' })
+  res.render('index', { title: 'Hello', name: '' })
 })
 
-app.listen(3000, () => {
-  console.log('Running on port 3000')
+app.listen(port, () => {
+  console.log(`Running on port ${port}`)
 })

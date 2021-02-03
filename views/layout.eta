@@ -5,7 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-  <title><%= title %> </title>
+  <title><%= it.title %> </title>
 </head>
 
 <body>
+
+<%~ it.body %>
+
+
+<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

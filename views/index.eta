@@ -1,0 +1,5 @@
+<% layout('./layout')  %>
+
+<div class="container">
+  <h1>Hello <%= it.name || 'World' %> </h1>
+</div>

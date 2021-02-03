@@ -1,17 +1,22 @@
 {
-  "name": "bootstrap-ejs",
+  "name": "fast-express-starter",
+  "description": "A starter template for fast NodeJs server-side applications",
+  "license": "Unlicense",
+  "repository": {
+    "url": "https://github.com/kalwabed/express-ejs-starter"
+  },
+  "homepage": "https://github.com/kalwabed/express-ejs-starter",
   "author": {
     "email": "kalwabedrzk@pm.me",
     "name": "Kalwabed Rizki"
   },
   "version": "1.0.0",
   "main": "app.js",
-  "license": "public",
   "scripts": {
     "dev": "nodemon app"
   },
   "dependencies": {
-    "ejs": "^3.1.5",
+    "eta": "^1.12.1",
     "express": "^4.17.1",
     "morgan": "^1.10.0"
   },
