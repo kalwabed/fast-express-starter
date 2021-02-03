@@ -1,0 +1,21 @@
+{
+  "name": "bootstrap-ejs",
+  "author": {
+    "email": "kalwabedrzk@pm.me",
+    "name": "Kalwabed Rizki"
+  },
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "public",
+  "scripts": {
+    "dev": "nodemon app"
+  },
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
